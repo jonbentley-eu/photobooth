@@ -5,7 +5,7 @@ import signal, os, subprocess
 import RPi.GPIO as GPIO
 
 
-#setup GPIO
+#setup GPIO, change pin as required.
 GPIO.setmode(GPIO.BOARD)
 btn_pin = 33
 GPIO.setup(btn_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
